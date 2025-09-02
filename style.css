@@ -1,0 +1,108 @@
+
+/* Ajustes generales del body */
+body {
+    height: 100%;       /* Ocupar toda la pantalla */
+    margin: 0;          /* Quitar márgenes por defecto */
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #c8e7cae7; /* Fondo neutro */
+}
+
+/* Encabezado */
+.header-section {
+    background-color: hwb(77 64% 15% / 0.984); /* Verde-azulado */
+    color: rgb(31, 26, 26); 
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Columna izquierda superior */
+.col-md-6.bg-light {
+    background-color: #94a0ac !important; 
+    padding: 20px;
+    border: 2px solid #7c8792; /* contorno suave */
+    border-radius: 10px;
+}
+
+/* Columna derecha superior */
+.col-md-6.bg-secondary {
+    background-color: #3e6485 !important; 
+    color: #ffffff !important; 
+    padding: 20px;
+    border: 2px solid #2d4a61;
+    border-radius: 10px;
+}
+
+/* Columna izquierda inferior */
+.col-md-4.bg-light {
+    background-color: #2b3844 !important; 
+    color: #ffffff;
+    padding: 20px;
+    border: 2px solid #1c262f;
+    border-radius: 10px;
+}
+
+/* Columna derecha inferior */
+.col-md-4.bg-secondary {
+    background-color: #ca85bb !important; 
+    color: #ffffff !important; 
+    padding: 20px;
+    border: 2px solid #a66497;
+    border-radius: 10px;
+}
+
+/* Tarjetas */
+.card {
+    width: 16rem;  
+    margin: 20px auto;
+    background-color: hwb(0 75% 25% / 0.984); /* Fondo recuadro */
+    border-radius: 1rem; 
+    border: 2px solid #ccc; /* contorno */
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.25); 
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover tarjeta */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.3);
+}
+
+/* Imagen dentro de la tarjeta */
+.card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 20px auto 10px auto;
+}
+
+/* Título y texto */
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #222;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #333;
+}
+
+/* Botón de las tarjetas */
+.card .btn {
+    background-color: #bec4c9;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 8px 16px;
+    margin-top: 10px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.card .btn:hover {
+    background-color: #b0b9c2;
+    transform: scale(1.05);
+}
